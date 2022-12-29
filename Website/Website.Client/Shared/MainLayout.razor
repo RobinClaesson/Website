@@ -12,15 +12,15 @@
             <article class="content px-4">
                 @Body
             </article>
+            <RadzenButton Click="@ChangeCollorButtonPress"> Change Color </RadzenButton>
         </main>
-    <div>
-        <button @onclick="ChangeCollorButtonPress"> Change Color </button>
-    </div>
+
+
     </div>
 </div>
 
 
-@* Outside css file to acces state*@
+@* Sets css-variables that all components can use. Outside css file to acces state*@
 <style>
     .variable-wraper {
         --bg: @ViewState.Value.Colors.BackgroundHtml;
