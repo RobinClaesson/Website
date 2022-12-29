@@ -13,7 +13,7 @@ namespace Website.Client.Shared
         [Inject]
         public IDispatcher Dispatcher { get; set; }
 
-        public void ChangeCollorButtonPress()
+        public void SetThemeColors()
         {
             Dispatcher.Dispatch(new ViewColorChangeAction(new WebsiteColors()));
         }

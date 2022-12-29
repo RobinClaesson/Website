@@ -1,6 +1,5 @@
 ﻿@inherits LayoutComponentBase
 @using Website.Client.Design;
-@using System.Drawing;
 
 <div class="variable-wraper">
     <div class="page">
@@ -12,10 +11,8 @@
             <article class="content px-4">
                 @Body
             </article>
-            <RadzenButton Click="@ChangeCollorButtonPress"> Change Color </RadzenButton>
+            <Button Color="Color.Primary" Clicked="@SetThemeColors">Color</Button>
         </main>
-
-
     </div>
 </div>
 
