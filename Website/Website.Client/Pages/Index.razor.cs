@@ -10,13 +10,6 @@ namespace Website.Client.Pages
         [Inject]
         private IState<ViewState> ViewState { get; set; }
 
-        [Inject]
-        public IDispatcher Dispatcher { get; set; }
-
-
-        public void ChangeCollorButtonPress()
-        {
-            Dispatcher.Dispatch(new ViewColorChangeAction( new WebsiteColors()));
-        }
+        
     }
 }

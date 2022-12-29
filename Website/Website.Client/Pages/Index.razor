@@ -6,14 +6,8 @@
 
 Welcome to your new app.
 <div>
-    <button @onclick="ChangeCollorButtonPress"> Change Color </button>
-</div>
-<div>
     <p>Value of background: @ViewState.Value.Colors.Background</p>
-    <p>Value of text: @ViewState.Value.Colors.Text</p>
-    <p>Value of dark: @ViewState.Value.Colors.DarkAccent</p>
-    <p>Value of middle: @ViewState.Value.Colors.MiddleAccent</p>
-    <p>Value of light: @ViewState.Value.Colors.LightAccent</p>
+    <p>Value of dark: @ViewState.Value.Colors.AccentDark</p>
+    <p>Value of middle: @ViewState.Value.Colors.AccentMedium</p>
+    <p>Value of light: @ViewState.Value.Colors.AccentLight</p>
 </div>
-
-<SurveyPrompt Title="How is Blazor working for you?" />
