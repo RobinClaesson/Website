@@ -1,5 +1,6 @@
 ﻿using Website.Client.Design;
 using Fluxor;
+using Blazorise;
 
 namespace Website.Client.Store.View
 {

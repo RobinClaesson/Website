@@ -20,9 +20,12 @@
 @* Sets css-variables that all components can use. Outside css file to acces state*@
 <style>
     .variable-wraper {
-        --bg: @ViewState.Value.Colors.BackgroundHtml;
-        --ad: @ViewState.Value.Colors.AccentDarkHtml;
-        --am: @ViewState.Value.Colors.AccentMediumHtml;
-        --al: @ViewState.Value.Colors.AccentLightHtml;
+        --background: @ViewState.Value.Colors.BackgroundHtml;
+
+        --primary: @ViewState.Value.Colors.PrimaryHtml;
+        --secondary: @ViewState.Value.Colors.SecondaryHtml;
+
+        --text-primary: @ViewState.Value.Colors.TextPrimaryHtml;
+        --text-secondary: @ViewState.Value.Colors.TextSecondaryHtml;
     }
 </style>
