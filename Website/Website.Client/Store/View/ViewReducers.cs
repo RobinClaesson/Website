@@ -5,7 +5,7 @@ namespace Website.Client.Store.View
     public class ViewReducers
     {
         [ReducerMethod]
-        public static ViewState OnViewColorChangeAction(ViewState state, ViewColorChangeAction action)
+        public static ViewState OnViewSetColorAction(ViewState state, ViewSetColorAction action)
         {
             return state with
             {

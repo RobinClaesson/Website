@@ -1,31 +1,30 @@
 ﻿@inherits LayoutComponentBase
-@using Website.Client.Design;
 
 <div class="variable-wraper">
     <div class="page">
         <div class="sidebar">
             <NavMenu />
         </div>
-
         <main>
             <article class="content px-4">
                 @Body
             </article>
-            <Button Color="Color.Primary" Clicked="@SetThemeColors">Color</Button>
         </main>
     </div>
+<SettingsMenu />
 </div>
 
-
-@* Sets css-variables that all components can use. Outside css file to acces state*@
+@* Sets css-variables outside css file to acces state*@
 <style>
     .variable-wraper {
-        --background: @ViewState.Value.Colors.BackgroundHtml;
+        --background: @ViewState.Value.Colors.Background;
+        --primary: @ViewState.Value.Colors.Primary;
+        --secondary: @ViewState.Value.Colors.Secondary;
+        --dark: @ViewState.Value.Colors.Dark;
+        --light: @ViewState.Value.Colors.Light;
 
-        --primary: @ViewState.Value.Colors.PrimaryHtml;
-        --secondary: @ViewState.Value.Colors.SecondaryHtml;
-
-        --text-primary: @ViewState.Value.Colors.TextPrimaryHtml;
-        --text-secondary: @ViewState.Value.Colors.TextSecondaryHtml;
+        --text-primary: @ViewState.Value.Colors.TextPrimary;
+        --text-secondary: @ViewState.Value.Colors.TextSecondary;
+        --text-highlight: @ViewState.Value.Colors.TextHighlight;
     }
 </style>

@@ -1,0 +1,12 @@
+﻿<div class="settings">
+    <Dropdown Direction="Direction.Up">
+        <DropdownToggle Color="Color.Secondary">
+            <i class="fa-solid fa-gear"></i>
+        </DropdownToggle>
+        <DropdownMenu>
+            <DropdownItem Clicked="() => SetThemeColors(WebThemeColors.LightGreenTheme)">Light</DropdownItem>
+            <DropdownDivider />
+            <DropdownItem Clicked="() => SetThemeColors(WebThemeColors.DarkTheme)">Dark</DropdownItem>
+        </DropdownMenu>
+    </Dropdown>
+</div>

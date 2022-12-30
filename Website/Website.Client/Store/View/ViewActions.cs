@@ -2,5 +2,5 @@
 
 namespace Website.Client.Store.View
 {
-    public record ViewColorChangeAction(WebsiteColors Colors);
+    public record ViewSetColorAction(WebThemeColors Colors);
 }

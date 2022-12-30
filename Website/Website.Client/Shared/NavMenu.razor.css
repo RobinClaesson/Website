@@ -1,5 +1,5 @@
 .navbar-all {
-    background-image: linear-gradient(180deg, var(--primary), var(--secondary));
+    background-color: var(--primary);
     height: 100%;
 }
 

@@ -2,13 +2,34 @@
 
 <PageTitle>Robin Claesson</PageTitle>
 
-<h1>Hello Claesson!</h1>
+<Heading>
+    <Text TextColor="TextColor.Primary">
+        Hello Claesson!
+    </Text>
+</Heading>
 
-Welcome to your new app.
-<div>
-    <p>Value of Background: @ViewState.Value.Colors.Background</p>
-    <p>Value of Primary: @ViewState.Value.Colors.Primary</p>
-    <p>Value of Secondary: @ViewState.Value.Colors.Secondary</p>
-    <p>Value of TextPrimary: @ViewState.Value.Colors.TextPrimary</p>
-    <p>Value of TextSecondary: @ViewState.Value.Colors.TextSecondary</p>
-</div>
+
+<Row>
+    <Column ColumnSize="ColumnSize.Is3">
+        <Button Color="Color.Primary">
+            Primary
+        </Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is3">
+        <Button Color="Color.Secondary">
+            Secondary
+        </Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is3">
+        <Button Color="Color.Dark">
+            Dark
+        </Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is3">
+        <Button Color="Color.Light">
+            Light
+        </Button>
+    </Column>
+</Row>
+
+<Divider />
