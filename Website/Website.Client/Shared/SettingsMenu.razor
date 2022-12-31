@@ -1,12 +1,39 @@
 ﻿<div class="settings">
     <Dropdown Direction="Direction.Up">
-        <DropdownToggle Color="Color.Secondary">
-            <i class="fa-solid fa-gear"></i>
+        <DropdownToggle Color="Color.Secondary" TextColor="TextColor.Dark">
+            <span class="oi oi-cog gear-icon" aria-hidden="true"></span>
         </DropdownToggle>
-        <DropdownMenu>
-            <DropdownItem Clicked="() => SetThemeColors(WebThemeColors.LightGreenTheme)">Light</DropdownItem>
-            <DropdownDivider />
-            <DropdownItem Clicked="() => SetThemeColors(WebThemeColors.DarkTheme)">Dark</DropdownItem>
+
+        <DropdownMenu Background="Background.Secondary">
+
+            @*Themes*@
+            <Dropdown Direction="Direction.Start">
+                <DropdownToggle TextColor="TextColor.Primary"
+                                Color="Color.Secondary"
+                                Background="Background.Secondary">
+                    Themes
+                </DropdownToggle>
+
+                <DropdownMenu Background="Background.Secondary">
+                    @foreach (var theme in ViewState.Value.DefaultThemes)
+                    {
+                        <DropdownItem Clicked="() => SetThemeColors(theme)"
+                                  Background="Background.Secondary"
+                                  TextColor="TextColor.Primary">
+
+                            @if (theme == ViewState.Value.ActiveTheme)
+                            {
+                                @theme.ThemeName   <span class="oi oi-check active-icon" aria-hidden="true"></span>
+                            }
+                            else
+                            {
+                                @theme.ThemeName
+                            }
+                        </DropdownItem>
+                    }
+                </DropdownMenu>
+            </Dropdown>
+
         </DropdownMenu>
     </Dropdown>
 </div>

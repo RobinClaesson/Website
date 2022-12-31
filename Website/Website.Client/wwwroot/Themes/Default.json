@@ -1,0 +1,24 @@
+[
+  {
+    "ThemeName": "Dark",
+    "Background": "#28363C",
+    "Primary": "#38474E",
+    "Secondary": "#584D4C",
+    "Dark": "#222B2F",
+    "Light": "#45565E",
+    "TextPrimary": "#FFFFFF",
+    "TextSecondary": "#584D4C",
+    "TextInfo": "#368CBB"
+  },
+  {
+    "ThemeName": "Light Green",
+    "Background": "#D8E9A8",
+    "Primary": "#1E5128",
+    "Secondary": "#4E9F3D",
+    "Dark": "#191A19",
+    "Light": "#D8E9A8",
+    "TextPrimary": "#191A19",
+    "TextSecondary": "#1E5128",
+    "TextInfo": "#D8E9A8"
+  }
+]

@@ -11,20 +11,19 @@
             </article>
         </main>
     </div>
-<SettingsMenu />
+    <SettingsMenu />
 </div>
 
 @* Sets css-variables outside css file to acces state*@
 <style>
     .variable-wraper {
-        --background: @ViewState.Value.Colors.Background;
-        --primary: @ViewState.Value.Colors.Primary;
-        --secondary: @ViewState.Value.Colors.Secondary;
-        --dark: @ViewState.Value.Colors.Dark;
-        --light: @ViewState.Value.Colors.Light;
-
-        --text-primary: @ViewState.Value.Colors.TextPrimary;
-        --text-secondary: @ViewState.Value.Colors.TextSecondary;
-        --text-highlight: @ViewState.Value.Colors.TextHighlight;
+        --background: @ViewState.Value.ActiveTheme.Background;
+        --primary: @ViewState.Value.ActiveTheme.Primary;
+        --secondary: @ViewState.Value.ActiveTheme.Secondary;
+        --dark: @ViewState.Value.ActiveTheme.Dark;
+        --light: @ViewState.Value.ActiveTheme.Light;
+        --text-primary: @ViewState.Value.ActiveTheme.TextPrimary;
+        --text-secondary: @ViewState.Value.ActiveTheme.TextSecondary;
+        --text-info: @ViewState.Value.ActiveTheme.TextInfo;
     }
 </style>

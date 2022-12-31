@@ -5,13 +5,26 @@ namespace Website.Client.Store.View
     public class ViewReducers
     {
         [ReducerMethod]
-        public static ViewState OnViewSetColorAction(ViewState state, ViewSetColorAction action)
+        public static ViewState OnViewSetActiveThemeAction(ViewState state, ViewSetActiveThemeAction action)
         {
             return state with
             {
-                Colors = action.Colors
+                ActiveTheme = action.Theme
             };
         }
 
+        [ReducerMethod]
+        public static ViewState OnViewSetDefaultThemesAction(ViewState state, ViewSetDefaultThemesAction action)
+        {
+            if (action.Themes.Length > 0)
+            {
+                return state with
+                {
+                    DefaultThemes = action.Themes,
+                    ActiveTheme = action.Themes[0]
+                };
+            }
+            else return state;
+        }
     }
 }

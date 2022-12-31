@@ -2,5 +2,8 @@
 
 namespace Website.Client.Store.View
 {
-    public record ViewSetColorAction(WebThemeColors Colors);
+    public record ViewSetActiveThemeAction(WebThemeColors Theme);
+
+    public record ViewPageInitAction();
+    public record ViewSetDefaultThemesAction(WebThemeColors[] Themes);
 }

@@ -1,19 +1,20 @@
 ﻿using Website.Client.Design;
 using Fluxor;
-using Blazorise;
 
 namespace Website.Client.Store.View
 {
     [FeatureState]
     public record ViewState
     {
-        public Design.WebThemeColors Colors { get; set; } = Design.WebThemeColors.DarkTheme;
+        public WebThemeColors[] DefaultThemes { get; set; } = new WebThemeColors[0];
+        public WebThemeColors ActiveTheme { get; set; } = new WebThemeColors();
         public OpenWindows OpenWindows { get; set; } = new OpenWindows();
 
         private ViewState() { }
-        public ViewState(Design.WebThemeColors colors, OpenWindows openWindows)
+        public ViewState(WebThemeColors[] defaultThemes, WebThemeColors activeTheme, OpenWindows openWindows)
         {
-            Colors = colors;
+            DefaultThemes = defaultThemes;
+            ActiveTheme = activeTheme;
             OpenWindows = openWindows;
         }
     }
