@@ -17,7 +17,7 @@
                 <DropdownMenu Background="Background.Secondary">
                     @foreach (var theme in ViewState.Value.DefaultThemes)
                     {
-                        <DropdownItem Clicked="() => SetThemeColors(theme)"
+                        <DropdownItem @onclick="args => ThemeClickedInSettingsMenu(args, theme)"
                                   Background="Background.Secondary"
                                   TextColor="TextColor.Primary">
 
