@@ -21,7 +21,7 @@ namespace Website.Client.Store.View
                 return state with
                 {
                     DefaultThemes = action.Themes,
-                    ActiveTheme = action.Themes[1]
+                    ActiveTheme = action.Themes[0]
                 };
             }
             else return state;
