@@ -17,17 +17,14 @@
                 <DropdownMenu Background="Background.Secondary">
                     @foreach (var theme in ViewState.Value.DefaultThemes)
                     {
-                        <DropdownItem Clicked="() => SetThemeColors(theme)"
+                        <DropdownItem @onclick="args => ThemeClickedInSettingsMenu(args, theme)"
                                   Background="Background.Secondary"
                                   TextColor="TextColor.Primary">
 
+                            @theme.ThemeName
                             @if (theme == ViewState.Value.ActiveTheme)
                             {
-                                @theme.ThemeName   <span class="oi oi-check active-icon" aria-hidden="true"></span>
-                            }
-                            else
-                            {
-                                @theme.ThemeName
+                                @:&#160;&#160;<span class="oi oi-check active-icon" aria-hidden="true"></span>
                             }
                         </DropdownItem>
                     }

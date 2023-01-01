@@ -3,6 +3,7 @@ using Fluxor;
 using Blazorise;
 using Website.Client.Store.View;
 using Website.Client.Design;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace Website.Client.Shared
 {
@@ -29,6 +30,14 @@ namespace Website.Client.Shared
 
             Dispatcher.Dispatch(new ViewPageInitAction());
             base.OnInitialized();
+        }
+
+        public void ThemeClickedInSettingsMenu(MouseEventArgs mouseEventArgs, WebThemeColors theme)
+        {
+            if(mouseEventArgs.Button == 0)
+            {
+                SetThemeColors(theme);
+            }
         }
 
         public void SetThemeColors(WebThemeColors theme)
