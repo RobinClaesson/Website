@@ -7,18 +7,18 @@
     "Dark": "#222B2F",
     "Light": "#45565E",
     "TextPrimary": "#FFFFFF",
-    "TextSecondary": "#584D4C",
-    "TextInfo": "#368CBB"
+    "TextSecondary": "#368CBB",
+    "TextInfo": "#EE6940"
   },
   {
-    "ThemeName": "Light Green",
-    "Background": "#D8E9A8",
-    "Primary": "#1E5128",
-    "Secondary": "#4E9F3D",
-    "Dark": "#191A19",
-    "Light": "#D8E9A8",
-    "TextPrimary": "#191A19",
-    "TextSecondary": "#1E5128",
-    "TextInfo": "#D8E9A8"
+    "ThemeName": "Light",
+    "Background": "#D9E6F1",
+    "Primary": "#4E7379",
+    "Secondary": "#5B7893",
+    "Dark": "#394D56",
+    "Light": "#87A0B2",
+    "TextPrimary": "#111111",
+    "TextSecondary": "#FFFFFF",
+    "TextInfo": "#EEA47FFF"
   }
 ]
