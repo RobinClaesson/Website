@@ -26,5 +26,26 @@ namespace Website.Client.Store.View
             }
             else return state;
         }
+
+        [ReducerMethod]
+        public static ViewState OnViewSetProjectsAction(ViewState state, ViewSetProjectsAction action)
+        {
+            return state with
+            {
+                Projects = action.Projects
+            };
+        }
+
+        [ReducerMethod(typeof(ViewToggleProjectMenuAction))]
+        public static ViewState OnViewToggleProjectMenu(ViewState state)
+        {
+            return state with
+            {
+                OpenWindows = state.OpenWindows with
+                {
+                    ProjectMenu = !state.OpenWindows.ProjectMenu
+                }
+            };
+        }
     }
 }

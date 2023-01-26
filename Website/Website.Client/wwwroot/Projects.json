@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "E-Portfolio",
+    "Description": "This website and its functions",
+    "PageName": "EPortfolio",
+    "Icon": "browser"
+  },
+  {
+    "Name": "Mechanical Moshpit",
+    "Description": "Network multiplayer game",
+    "PageName": "MechanicalMoshpit",
+    "Icon": "puzzle-piece"
+  },
+  {
+    "Name": "Simulate Football",
+    "Description": "CLI Footbal leage simulator",
+    "PageName": "SimulateFootball",
+    "Icon": "pie-chart"
+  }
+]

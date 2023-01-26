@@ -1,4 +1,4 @@
-﻿using Website.Client.Design;
+﻿using Website.Client.Models;
 using Fluxor;
 using Microsoft.AspNetCore.Components;
 using Website.Client.Store.View;
@@ -7,13 +7,23 @@ namespace Website.Client.Shared
 {
     public partial class NavMenu
     {
+        [Inject]
+        public IDispatcher Dispatcher { get; set; }
 
-        //Default Blazor Navmenu code
-        private bool collapseNavMenu = true;
-        private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+        [Inject]
+        public IState<ViewState> ViewState { get; set; }
+
+        private bool _collapseNavMenu = true;
+        private string? NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
+
         private void ToggleNavMenu()
         {
-            collapseNavMenu = !collapseNavMenu;
+            _collapseNavMenu = !_collapseNavMenu;
+        }
+
+        private void ToggleProjectMenu()
+        {
+            Dispatcher.Dispatch(new ViewToggleProjectMenuAction());
         }
     }
 }

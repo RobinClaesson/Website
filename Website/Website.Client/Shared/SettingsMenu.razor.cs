@@ -2,7 +2,7 @@
 using Fluxor;
 using Blazorise;
 using Website.Client.Store.View;
-using Website.Client.Design;
+using Website.Client.Models;
 using Microsoft.AspNetCore.Components.Web;
 
 namespace Website.Client.Shared

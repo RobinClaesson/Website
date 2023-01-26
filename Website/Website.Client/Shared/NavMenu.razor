@@ -9,13 +9,47 @@
         </div>
     </div>
 
-    <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <div class="@NavMenuCssClass">
         <nav class="flex-column">
-            <div class="nav-item px-3">
+            @*Home*@
+            <div class="nav-item px-3" @onclick="ToggleNavMenu">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                    <span class="oi oi-home" aria-hidden="true" />
+                    Home
                 </NavLink>
             </div>
+
+            @*Projects*@
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" Match="NavLinkMatch.All" @onclick="() => ToggleProjectMenu()">
+                    <span class="oi oi-wrench" aria-hidden="true" />
+                    Projects
+                    &#160;&#160;
+
+                    @if (ViewState.Value.OpenWindows.ProjectMenu)
+                    {
+                        <span class="oi oi-caret-top" aria-hidden="true" />
+                    }
+                    else
+                    {
+                        <span class="oi oi-caret-bottom" aria-hidden="true" />
+                    }
+                </NavLink>
+            </div>
+            @if (ViewState.Value.OpenWindows.ProjectMenu)
+            {
+                    @foreach (var project in ViewState.Value.Projects)
+                    {
+                        <div class="nav-item px-3 project-item">
+                            <Tooltip Text="@project.Description" Placement="TooltipPlacement.RightEnd">
+                                <NavLink class="nav-link" href="@project.PageName" Match="NavLinkMatch.All">
+                                <span class="oi oi-@project.Icon" aria-hidden="true" />
+                                    @project.Name
+                                </NavLink>
+                            </Tooltip>
+                        </div>
+                    }
+            }
         </nav>
     </div>
 </div>

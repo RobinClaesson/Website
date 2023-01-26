@@ -1,4 +1,4 @@
-﻿using Website.Client.Design;
+﻿using Website.Client.Models;
 
 namespace Website.Client.Store.View
 {
@@ -6,4 +6,8 @@ namespace Website.Client.Store.View
 
     public record ViewPageInitAction();
     public record ViewSetDefaultThemesAction(WebThemeColors[] Themes);
+    public record ViewSetProjectsAction(ProjectInfo[] Projects);
+
+    public record ViewToggleProjectMenuAction();
+
 }
