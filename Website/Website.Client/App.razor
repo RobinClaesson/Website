@@ -9,7 +9,13 @@
         <NotFound>
             <PageTitle>Not found</PageTitle>
             <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
+                <Heading Size="HeadingSize.Is1"
+                         TextColor="TextColor.Primary">
+                    Nothing here ¯\_(ツ)_/¯
+                </Heading>
+                <Text TextColor="TextColor.Primary">
+                    Sorry, there's nothing at this address
+                </Text>
             </LayoutView>
         </NotFound>
     </Router>
