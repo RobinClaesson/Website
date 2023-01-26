@@ -21,7 +21,7 @@
 
             @*Projects*@
             <div class="nav-item px-3">
-                <NavLink class="nav-link" Match="NavLinkMatch.All" @onclick="() => ToggleProjectMenu()">
+                <NavLink class="nav-link" Match="NavLinkMatch.All" @onclick="ToggleProjectMenu">
                     <span class="oi oi-wrench" aria-hidden="true" />
                     Projects
                     &#160;&#160;
@@ -42,7 +42,7 @@
                     {
                         <div class="nav-item px-3 project-item">
                             <Tooltip Text="@project.Description" Placement="TooltipPlacement.RightEnd">
-                                <NavLink class="nav-link" href="@project.PageName" Match="NavLinkMatch.All">
+                            <NavLink class="nav-link" href="@project.PageName" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
                                 <span class="oi oi-@project.Icon" aria-hidden="true" />
                                     @project.Name
                                 </NavLink>
