@@ -2,124 +2,98 @@
 
 <PageTitle>Robin Claesson</PageTitle>
 
-<Heading>
-    <Text TextColor="TextColor.Primary">
-        Hello Claesson!
-    </Text>
-</Heading>
-
-
 <Row>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Primary">
-            <Text TextColor="TextColor.Primary"
-                  TextWeight="TextWeight.Bold">
-                Primary text on Primary color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Secondary">
-            <Text TextColor="TextColor.Primary">
-                Primary text on Secondary color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Dark">
-            <Text TextColor="TextColor.Primary">
-                Primary text on Dark color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Light">
-            <Text TextColor="TextColor.Primary">
-                Primary text on Light color
-            </Text>
-        </Button>
-    </Column>
-</Row>
-<Divider />
+    <Column ColumnSize="ColumnSize.Is5">
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Primary">
-            <Text TextColor="TextColor.Secondary">
-                Secondary text on Primary color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Secondary">
-            <Text TextColor="TextColor.Secondary">
-                Secondary text on Secondary color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Dark">
-            <Text TextColor="TextColor.Secondary">
-                Secondary text on Dark color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Light">
-            <Text TextColor="TextColor.Secondary">
-                Secondary text on Light background
-            </Text>
-        </Button>
-    </Column>
-</Row>
-<Divider />
+        <Card Margin="Margin.Is4.OnAll"
+              Background="Background.Primary"
+              Border="Border.Rounded.Is2.Secondary">
+            <CardImage Source="img/temp profil.png"
+                       Alt="Profile picture" />
+            <CardBody>
+                <CardTitle Size="3"
+                           TextWeight="TextWeight.Bold"
+                           TextColor="TextColor.Secondary">About me</CardTitle>
+                <CardText>
+                    <Text TextColor="TextColor.Primary">
+                        My name is
+                    </Text>
+                    <Text TextColor="TextColor.Info">
+                        Robin Claesson
+                    </Text>
+                    <Text TextColor="TextColor.Primary">
+                        , and I’m studying engineering in  Information-Technology at
+                    </Text>
+                    @*TODO: Acctually link this *@
+                    <Link TextColor="TextColor.Secondary"> KTH Royal Institute of Technology in Stockholm. </Link>
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Primary">
-            <Text TextColor="TextColor.Info">
-                Info text on Primary color
-            </Text>
-        </Button>
+                </CardText>
+            </CardBody>
+        </Card>
     </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Secondary">
-            <Text TextColor="TextColor.Info">
-                Info text on Secondary color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Dark">
-            <Text TextColor="TextColor.Info">
-                Info text on Dark color
-            </Text>
-        </Button>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is3">
-        <Button Color="Color.Light">
-            <Text TextColor="TextColor.Info">
-                Info text on Light color
-            </Text>
-        </Button>
-    </Column>
-</Row>
-<Divider />
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is4">
-        <Text TextColor="TextColor.Primary">
-            Primary text on Background color
-        </Text>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is4">
-        <Text TextColor="TextColor.Secondary">
-            Secondary text on Background color
-        </Text>
-    </Column>
-    <Column ColumnSize="ColumnSize.Is4">
-        <Text TextColor="TextColor.Info">
-            Info text on Background color
-        </Text>
+
+    <Column ColumnSize="ColumnSize.Is5">
+        <Row>
+            <Card Margin="Margin.Is4.OnAll"
+                  Background="Background.Dark"
+                  Border="Border.Rounded.Is2.Secondary">
+                <CardBody>
+                    <Paragraph>
+                        <Text TextColor="TextColor.Primary">
+                            I have the most experience working with
+                        </Text>
+
+                        <Text TextColor="TextColor.Info">
+                            .NET
+                        </Text>
+                        <Text TextColor="TextColor.Primary">
+                            ,but have also worked with
+                        </Text>
+                        <Text TextColor="TextColor.Secondary">Java</Text>
+                        <Text TextColor="TextColor.Primary">, </Text>
+                        <Text TextColor="TextColor.Secondary">C/C++</Text>
+                        <Text TextColor="TextColor.Primary">, and</Text>
+                        <Text TextColor="TextColor.Secondary">JavaScript</Text>
+                        <Text TextColor="TextColor.Primary">
+                            Java
+                            to name a few other.
+                        </Text>
+                    </Paragraph>
+
+                    <Paragraph>
+                        <Text TextColor="TextColor.Primary">
+                            I have mainly seen my self as a backend engineer, but am working on expanding my frontend knowledge, with this site built with
+                        </Text>
+                        <Text TextColor="TextColor.Info"> Blazor </Text>
+                        <Text TextColor="TextColor.Primary">
+                            being part of that endeavour.
+                        </Text>
+                    </Paragraph>
+
+                    <Paragraph>
+                        <Text TextColor="TextColor.Primary">
+                            Except information about me and this site I'm building I have also listed a few of my other projects both in and outside of school.
+                        </Text>
+                    </Paragraph>
+
+                </CardBody>
+            </Card>
+        </Row>
+        <Row>
+            <Card Margin="Margin.Is4.OnAll"
+                  Background="Background.Light"
+                  Border="Border.Rounded.Is2.Secondary">
+                <CardBody>
+                    <UnorderedList>
+                    @*TODO: Get icons and link for all *@
+                        <OrderedListItem>GITHUB</OrderedListItem>
+                        <OrderedListItem>LINKEDIN</OrderedListItem> @*TODO: Setup Linkedin and add ppl*@
+                        <OrderedListItem>EMAIL</OrderedListItem> @*?*@
+                        <OrderedListItem>RESUME</OrderedListItem> @*? And if yes write a way nicer one*@
+                    </UnorderedList>
+                </CardBody>
+            </Card>
+        </Row>
     </Column>
 </Row>
