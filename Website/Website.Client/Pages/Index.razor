@@ -1,142 +1,17 @@
-﻿@page "/"
+﻿@using Website.Client.Pages.IndexComponents
+@page "/"
 
 <PageTitle>Robin Claesson</PageTitle>
 
 <Row>
     <Column ColumnSize="ColumnSize.Is5">
-
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-            <CardImage Source="img/profile.jpg"
-                       Alt="Profile picture" />
-            <CardBody>
-                <CardTitle Size="3"
-                           TextWeight="TextWeight.Bold"
-                           TextColor="TextColor.Secondary">
-                    About me
-                </CardTitle>
-                <CardText>
-                    <Text TextColor="TextColor.Primary">
-                        My name is
-                    </Text>
-                    <Text TextColor="TextColor.Info">
-                        Robin Claesson
-                    </Text>
-                    <Text TextColor="TextColor.Primary">
-                        , and I’m studying engineering in  Information-Technology at
-                    </Text>
-                    <Link TextColor="TextColor.Secondary"
-                          To="https://www.kth.se/utbildning/civilingenjor/informationsteknik"
-                          Target="Target.Blank">
-                    KTH Royal Institute of Technology in Stockholm.
-                    </Link>
-
-                </CardText>
-            </CardBody>
-        </Card>
-
-
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-            <CardBody>
-                <CardTitle Size="3"
-                           TextWeight="TextWeight.Bold"
-                           TextColor="TextColor.Info">
-                    Info & Contact
-                </CardTitle>
-
-                <Container Fluid>
-                    <Row>
-                        <Column ColumnSize="ColumnSize.Is3">
-                            <Link To="https://github.com/RobinClaesson"
-                                  Target="Target.Blank"
-                                  Title="GitHub">
-                            <Image Source="img/icons/github.png"
-                                   Width="Width.Is100" />
-                            </Link>
-                        </Column>
-                        <Column ColumnSize="ColumnSize.Is3">
-                            <Link To="https://www.linkedin.com/in/robinclaesson/"
-                                  Target="Target.Blank"
-                                  Title="LinkedIn">
-                            <Image Source="img/icons/linkedin.png"
-                                   Width="Width.Is100" />
-                            </Link>
-                        </Column>
-                        <Column ColumnSize="ColumnSize.Is3">
-                            <Link To="Resume.pdf"
-                                  Target="Target.Blank"
-                                  Title="CV">
-                            <Image Source="img/icons/cv.png"
-                                   Width="Width.Is100" />
-                            </Link>
-                        </Column>
-
-                        <Column ColumnSize="ColumnSize.Is3">
-                            <Link To="mailto:robin.claesson@gmail.com"
-                                  Title="Email">
-                            <Image Source="img/icons/mail.png"
-                                   Width="Width.Is100" />
-                            </Link>
-                        </Column>
-                    </Row>
-
-                </Container>
-            </CardBody>
-        </Card>
+        <AboutMeCard />
+        <ContactCard />
     </Column>
-
 
     <Column ColumnSize="ColumnSize.Is5">
         <Row>
-            <Card Margin="Margin.Is4.OnAll"
-                  Background="Background.Dark"
-                  Border="Border.Rounded.Is2.Secondary">
-                <CardBody>
-                    <Paragraph>
-                        <Text TextColor="TextColor.Primary">
-                            I have the most experience working with
-                        </Text>
-
-                        <Text TextColor="TextColor.Info">
-                            .NET
-                        </Text>
-                        <Text TextColor="TextColor.Primary">
-                            ,but have also worked with
-                        </Text>
-                        <Text TextColor="TextColor.Secondary">Java</Text>
-                        <Text TextColor="TextColor.Primary">, </Text>
-                        <Text TextColor="TextColor.Secondary">C/C++</Text>
-                        <Text TextColor="TextColor.Primary">, and</Text>
-                        <Text TextColor="TextColor.Secondary">JavaScript</Text>
-                        <Text TextColor="TextColor.Primary">
-                            to name a few other.
-                        </Text>
-                    </Paragraph>
-
-                    <Paragraph>
-                        <Text TextColor="TextColor.Primary">
-                            I have mainly seen my self as a backend engineer, but am working on expanding my frontend knowledge, with this site built with
-                        </Text>
-                        <Text TextColor="TextColor.Info"> Blazor </Text>
-                        <Text TextColor="TextColor.Primary">
-                            being part of that endeavour.
-                        </Text>
-                    </Paragraph>
-
-                    <Paragraph>
-                        <Text TextColor="TextColor.Primary">
-                            Except information about me and this site I'm building I have also listed a few of my other projects both in and outside of school.
-                        </Text>
-                    </Paragraph>
-
-
-
-
-                </CardBody>
-            </Card>
+            <TextInfoCard />
         </Row>
     </Column>
 </Row>
