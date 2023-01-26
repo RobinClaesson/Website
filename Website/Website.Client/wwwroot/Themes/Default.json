@@ -1,6 +1,17 @@
 [
   {
-    "ThemeName": "Dark",
+    "ThemeName": "Black",
+    "Background": "#111111",
+    "Primary": "#181818",
+    "Secondary": "#584D4C",
+    "Dark": "#151515",
+    "Light": "#252525",
+    "TextPrimary": "#FFFFFF",
+    "TextSecondary": "#368CBB",
+    "TextInfo": "#EE6940"
+  },
+  {
+    "ThemeName": "Dark Blue",
     "Background": "#28363C",
     "Primary": "#38474E",
     "Secondary": "#584D4C",
@@ -11,7 +22,7 @@
     "TextInfo": "#EE6940"
   },
   {
-    "ThemeName": "Light",
+    "ThemeName": "Light Blue",
     "Background": "#D9E6F1",
     "Primary": "#4E7379",
     "Secondary": "#5B7893",
