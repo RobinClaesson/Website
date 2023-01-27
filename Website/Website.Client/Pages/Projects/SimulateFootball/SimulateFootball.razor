@@ -3,85 +3,13 @@
 
 <Row>
     <Column ColumnSize="ColumnSize.Is5">
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-
-            <CardImage Source="img/projects/simulateFootball/menu.png" Alt="CLI Menu" />
-
-            <CardBody>
-                <StandardCardTitle Title="What does it do?" />
-                <CardText TextColor="TextColor.Primary">
-                    <Paragraph>
-                        This is a program made for simple simulations of large batches of entire seasons of football,
-                        Inspired by a
-                        <Link TextColor="TextColor.Secondary"
-                              To="https://www.youtube.com/watch?v=Vv9wpQIGZDw"
-                              Target="Target.Blank">
-                        Numberphile Video
-                        </Link>.
-                    </Paragraph>
-                    <Paragraph>
-                        The program takes in the results from a prevoius season and uses how
-                        likely teams are to both score and get scored on to simulate a game.
-                        Every game in a season is simulated to get the final standings.
-                    </Paragraph>
-                </CardText>
-            </CardBody>
-        </Card>
-
+        <DescrpitionCard />
+        <Spacing Height="1rem" />
+        <ExampleRunCard />
     </Column>
 
-    <Column ColumnSize="ColumnSize.Is5">
-
+    <Column ColumnSize="ColumnSize.Is6">
         <Spacing Height="15rem" />
-
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-
-            <CardImage Source="img/projects/simulateFootball/run.png" Alt="Running program" />
-
-            <CardBody>
-                <StandardCardTitle Title="Simulation stats and records" />
-                <CardText TextColor="TextColor.Primary">
-                    The user can chose to simulate any number of seasons in one run. After the simulations the program takes the tables from all the simulated seasons and checks for some statistics:
-                </CardText>
-            </CardBody>
-            <Row>
-                <Column ColumnSize="ColumnSize.Is4">
-                    <Statistic Title="Best performances"
-                               Description="Most points, most scored goals etc." />
-                    <Statistic Title="Worst performances"
-                               Description="Least points, least scored goals etc." />
-                    <Statistic Title="Worst team in first place"
-                               Description="Teams that won the league with the fewest points." />
-                </Column>
-            </Row>
-
-            <Row>
-                <Column ColumnSize="ColumnSize.Is4">
-                    <Statistic Title="Best team in lsat team"
-                               Description="Teams that came in last place with the most points." />
-                    <Statistic Title="Points needed to win"
-                               Description="The number of points needed to win the league, also known as 2nd place + 1 point" />
-                    <Statistic Title="Average points per placemen"
-                               Description=" Average point of all positions in the leage." />
-                </Column>
-            </Row>
-
-            <Row>
-                <Column ColumnSize="ColumnSize.Is4">
-                    <Statistic Title="Most league title"
-                               Description="How many times the the top teams won the league." />
-                    <Statistic Title="Most league jumbos"
-                               Description="How many times the bottom teams got last place." />
-                    <Statistic Title="Team placement"
-                               Description="This is how many times all teams got every placement in the league." />
-                </Column>
-            </Row>
-
-
-        </Card>
+        <StatisticsCard />
     </Column>
 </Row>
