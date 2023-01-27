@@ -2,91 +2,12 @@
 <ProjectMailLayout Title="Simulate Football" GithubLink="https://github.com/RobinClaesson/SimulateFootball" />
 
 <Row>
-    <Column ColumnSize="ColumnSize.Is4">
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-
-            <CardImage Source="img/projects/simulateFootball/menu.png" Alt="CLI Menu" />
-
-            <CardBody>
-                <StandardCardTitle Title="What does it do?" />
-                <CardText TextColor="TextColor.Primary">
-                    <Paragraph>
-                        This is a program made for simple simulations of large batches of entire seasons of football,
-                        Inspired by a
-                        <Link TextColor="TextColor.Secondary"
-                              To="https://www.youtube.com/watch?v=Vv9wpQIGZDw"
-                              Target="Target.Blank">
-                        Numberphile Video
-                        </Link>.
-                    </Paragraph>
-                    <Paragraph>
-                        The program takes in the results from a prevoius season and uses how
-                        likely teams are to both score and get scored on to simulate a game.
-                        Every game in a season is simulated to get the final standings.
-                    </Paragraph>
-                </CardText>
-            </CardBody>
-        </Card>
-
+    <Column ColumnSize="ColumnSize.Is5">
+        <DescrpitionCard />
     </Column>
 
-
-
-    <Column ColumnSize="ColumnSize.Is7">
-
+    <Column ColumnSize="ColumnSize.Is6">
         <Spacing Height="15rem" />
-
-        <Card Margin="Margin.Is4.OnAll"
-              Background="Background.Primary"
-              Border="Border.Rounded.Is2.Secondary">
-
-            <CardImage Source="img/projects/simulateFootball/run.png" Alt="Running program" />
-
-            <CardBody>
-                <StandardCardTitle Title="Simulation stats and records" />
-                <CardText TextColor="TextColor.Primary">
-                    The user can chose to simulate any number of seasons in one run. After the simulations the program takes the tables from all the simulated seasons and checks for some statistics:
-                </CardText>
-
-                <Row>
-                    
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Best performances" Description="Most points, most scored goals etc" />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Worst performances" Description="Least points, most admitted goals etc" />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Worst team in first place" Description="Team with the least points but that still won the league" />
-                    </Column>
-                </Row>
-
-                <Row>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Best team in last place" Description="Team with the most points that still came in last place in the league " />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Points needed to win" Description="Average point total needed to win (2nd place + 1)" />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Average points per placement" Description="Average final points for each placement in the leage" />
-                    </Column>
-                </Row>
-
-                <Row>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Most league titles" Description="How kmany times the top teams won the league" />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Most league jumbos" Description="How many times bottom teams got last place" />
-                    </Column>
-                    <Column ColumnSize="ColumnSize.Is4">
-                        <Statistic Title="Team placements" Description="How many times every team got each placement in the league, and their average placement." />
-                    </Column>
-                </Row>
-            </CardBody>
-        </Card>
+        <StatisticsCard />
     </Column>
 </Row>
