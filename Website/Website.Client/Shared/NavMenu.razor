@@ -42,7 +42,7 @@
                     {
                         <div class="nav-item px-3 project-item">
                             <Tooltip Text="@project.Description" Placement="TooltipPlacement.RightEnd">
-                            <NavLink class="nav-link" href="@project.PageName" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
+                            <NavLink class="nav-link" href="@PageHref(project.PageName)" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
                                 <span class="oi oi-@project.Icon" aria-hidden="true" />
                                     @project.Name
                                 </NavLink>

@@ -25,5 +25,7 @@ namespace Website.Client.Shared
         {
             Dispatcher.Dispatch(new ViewToggleProjectMenuAction());
         }
+
+        private string PageHref(string pagename) => $"projects/{pagename}";
     }
 }
