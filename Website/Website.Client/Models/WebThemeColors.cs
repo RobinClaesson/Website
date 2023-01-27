@@ -1,4 +1,4 @@
-﻿namespace Website.Client.Design
+﻿namespace Website.Client.Models
 {
     public record WebThemeColors
     {

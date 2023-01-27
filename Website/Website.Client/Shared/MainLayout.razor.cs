@@ -1,6 +1,6 @@
 ﻿using Fluxor;
 using Microsoft.AspNetCore.Components;
-using Website.Client.Design;
+using Website.Client.Models;
 using Website.Client.Store.View;
 
 using Blazorise;
