@@ -3,7 +3,7 @@
     "Name": "E-Portfolio",
     "Description": "This website and its functions",
     "PageName": "EPortfolio",
-    "Icon": "browser"
+    "Icon": "star"
   },
   {
     "Name": "Mechanical Moshpit",
@@ -16,5 +16,11 @@
     "Description": "CLI Footbal leage simulator",
     "PageName": "SimulateFootball",
     "Icon": "pie-chart"
+  },
+  {
+    "Name": "Sorting Visualizer",
+    "Description": "Visualize classic sorting algorithms",
+    "PageName": "Sorting",
+    "Icon": "vertical-align-bottom"
   }
 ]
