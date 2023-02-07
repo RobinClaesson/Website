@@ -1,0 +1,40 @@
+﻿@page "/projects/Sorting/"
+
+<ProjectMailLayout Title="Sorting Algorithms"
+                   GithubLink="https://github.com/RobinClaesson/RobinClaesson.github.io/blob/main/js/algorithms/sorting.js" />
+
+<Row>
+    <Column ColumnSize="ColumnSize.Is2" />
+    <Column ColumnSize="ColumnSize.Is8">
+
+        <Card Margin="Margin.Is4.OnAll"
+              Background="Background.Primary"
+              Border="Border.Rounded.Is2.Secondary">
+
+            <CardImage Source="img/projects/sorting.jpg" Alt="Visualization example" />
+
+            <CardBody>
+                <CardText TextColor="TextColor.Primary">
+                    <Paragraph>
+                        A classic visualization of sorting algorithms with columns rearranging until sorted.
+                        Can show Selection sort, Insertion sort, Quick sort, and Merge sort with variable animation speed.
+                    </Paragraph>
+                    <Paragraph>
+                        It is written i JavaScript and uses async await to create the delays between sorting steps.
+                        Because it predates this site and was written for a pure HTML page it is tricky to display 
+                        it here. Until I have ported it to .NET you can test the current version on my github.io page.
+                    </Paragraph>
+                </CardText>
+                <Button Color="Color.Light"
+                        Type="ButtonType.Link"
+                        To="https://robinclaesson.github.io/algorithms.html"
+                        Target="Target.Blank"
+                        Block>
+                    Open Visializer page
+                </Button>
+            </CardBody>
+        </Card>
+
+    </Column>
+</Row>
+
