@@ -11,6 +11,7 @@ namespace Website.Client.Pages
     {
         [Inject]
         private IState<ViewState> ViewState { get; set; }
+
         [Inject]
         public IJSRuntime JSRuntime { get; set; }
 
@@ -27,6 +28,7 @@ namespace Website.Client.Pages
             Init().GetAwaiter();
         }
 
+        //TODO: This should somehow be put into a single function and not copied like now, might not be possible because the StateHasChanged Call
         private async Task Init()
         {
             BrowserService.Resize += HandleWindowResize;

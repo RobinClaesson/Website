@@ -2,16 +2,31 @@
 
 <ProjectMainLayout Title="E-Portfolio"
                    GithubLink="https://github.com/RobinClaesson/Website" />
+@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+{
+    <Row>
+        <Column ColumnSize="ColumnSize.Is6">
+            <WebsiteDescriptionCard />
+            <Spacing Height="1.5rem" />
+            <SettingsImageCard />
+        </Column>
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is6">
+        <Column ColumnSize="ColumnSize.Is5">
+            <ThemeInfoCard />
+        </Column>
+
+    </Row>
+}
+else
+{
+    <Column ColumnSize="ColumnSize.Is12">
         <WebsiteDescriptionCard />
-        <Spacing Height="1.5rem" />
+    </Column>
+    <Column ColumnSize="ColumnSize.Is12">
+        <ThemeInfoCard />
+    </Column>
+    <Column ColumnSize="ColumnSize.Is12">
         <SettingsImageCard />
     </Column>
 
-    <Column ColumnSize="ColumnSize.Is5">
-        <ThemeInfoCard />
-    </Column>
-
-</Row>
+}
