@@ -1,13 +1,13 @@
 ﻿using Fluxor;
 using Microsoft.AspNetCore.Components;
-using Website.Client.Store.View;
+using Microsoft.JSInterop;
 using Website.Client.Models;
 using Website.Client.Services;
-using Microsoft.JSInterop;
+using Website.Client.Store.View;
 
-namespace Website.Client.Pages
+namespace Website.Client.Pages.Projects.MechanicalMoshpit
 {
-    public partial class Index
+    public partial class MechanicalMoshpit
     {
         [Inject]
         private IState<ViewState> ViewState { get; set; }
@@ -28,12 +28,11 @@ namespace Website.Client.Pages
             Init().GetAwaiter();
         }
 
-        //TODO: This should somehow be put into a single function and not copied like now, might not be possible because the StateHasChanged Call
         private async Task Init()
         {
             BrowserService.Resize += HandleWindowResize;
             await BrowserService.Init(JSRuntime);
-            BrowserService.SetLayoutThreshold(1100);
+            BrowserService.SetLayoutThreshold(1200);
 
             //This delay is needed so that the state gets updated if 
             //the window is below the threshold. Not an optimal way
@@ -47,6 +46,5 @@ namespace Website.Client.Pages
             Dispatcher.Dispatch(new ViewSetLayoutSizeAction(layoutSize));
             StateHasChanged();
         }
-
     }
 }

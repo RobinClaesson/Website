@@ -47,5 +47,14 @@ namespace Website.Client.Store.View
                 }
             };
         }
+
+        [ReducerMethod]
+        public static ViewState OnViewSetLayoutSizeAction(ViewState state, ViewSetLayoutSizeAction action)
+        {
+            return state with
+            {
+                LayoutSize = action.LayoutSize
+            };
+        }
     }
 }

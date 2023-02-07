@@ -10,14 +10,16 @@ namespace Website.Client.Store.View
         public WebThemeColors ActiveTheme { get; set; } = new WebThemeColors();
         public OpenWindows OpenWindows { get; set; } = new OpenWindows();
         public ProjectInfo[] Projects { get; set; } = new ProjectInfo[0];
+        public LayoutSize LayoutSize { get; set; } = LayoutSize.Large;
 
         private ViewState() { }
-        public ViewState(WebThemeColors[] defaultThemes, WebThemeColors activeTheme, OpenWindows openWindows, ProjectInfo[] projects)
+        public ViewState(WebThemeColors[] defaultThemes, WebThemeColors activeTheme, OpenWindows openWindows, ProjectInfo[] projects, LayoutSize layoutSize)
         {
             DefaultThemes = defaultThemes;
             ActiveTheme = activeTheme;
             OpenWindows = openWindows;
             Projects = projects;
+            LayoutSize = layoutSize;
         }
     }
 

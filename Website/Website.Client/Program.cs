@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Website.Client;
+using Website.Client.Services;
 using Fluxor;
 using Blazorise;
 using Blazorise.Bootstrap5;
@@ -12,10 +13,12 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 //Services
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddScoped<BrowserService>();
 
 //Fluxor
 var currentAssembly = typeof(Program).Assembly;
-builder.Services.AddFluxor(opt => {
+builder.Services.AddFluxor(opt =>
+{
     opt.ScanAssemblies(currentAssembly);
 #if DEBUG
     opt.UseReduxDevTools();
@@ -23,8 +26,7 @@ builder.Services.AddFluxor(opt => {
 });
 
 //Blazorize
-builder.Services
-                .AddBlazorise(opt =>
+builder.Services.AddBlazorise(opt =>
                 {
                     opt.Immediate = true;
                 })

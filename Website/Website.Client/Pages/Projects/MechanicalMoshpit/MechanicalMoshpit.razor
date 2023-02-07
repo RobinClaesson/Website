@@ -1,13 +1,29 @@
 ﻿@page "/projects/MechanicalMoshpit/"
-<ProjectMailLayout Title="Mechanical Moshpit" GithubLink="https://github.com/RobotElks/MechanicalMoshpit" />
+<ProjectMainLayout Title="Mechanical Moshpit" GithubLink="https://github.com/RobotElks/MechanicalMoshpit" />
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is8">
+@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+{
+    <Row>
+        <Column ColumnSize="ColumnSize.Is7">
+            <GameplayCard />
+        </Column>
+
+        <Column ColumnSize="ColumnSize.Is5">
+            <SetupCard />
+            <DevelopmentCard />
+        </Column>
+    </Row>
+}
+else
+{
+    <Column ColumnSize="ColumnSize.Is12">
         <GameplayCard />
     </Column>
-
-    <Column ColumnSize="ColumnSize.Is3">
+    <SetupCard />
+    <Column ColumnSize="ColumnSize.Is12">
         <SetupCard />
+    </Column>
+    <Column ColumnSize="ColumnSize.Is12">
         <DevelopmentCard />
     </Column>
-</Row>
+}
