@@ -41,12 +41,12 @@
                 @foreach (var project in ViewState.Value.Projects)
                 {
                     <div class="nav-item px-3 project-item">
-                        <Tooltip Text="@project.Description" Placement="TooltipPlacement.RightEnd">
+                        @*<Tooltip Text="@project.Description" Placement="TooltipPlacement.RightEnd">*@
                             <NavLink class="nav-link" href="@PageHref(project.PageName)" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
                                 <span class="oi oi-@project.Icon" aria-hidden="true" />
                                 @project.Name
                             </NavLink>
-                        </Tooltip>
+                        @*</Tooltip>*@
                     </div>
                 }
                 @*<div class="nav-item px-3 project-item">
