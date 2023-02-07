@@ -3,15 +3,35 @@
 
 <PageTitle>Robin Claesson</PageTitle>
 
-<Row>
-    <Column ColumnSize="ColumnSize.Is5">
-        <AboutMeCard />
-    </Column>
+@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+{
+    <Row>
+        <Column ColumnSize="ColumnSize.Is6">
+            <AboutMeCard />
+        </Column>
 
-    <Column ColumnSize="ColumnSize.Is5">
-        <Row>
+        <Column ColumnSize="ColumnSize.Is5">
             <ContactCard />
             <TextInfoCard />
-        </Row>
-    </Column>
-</Row>
+        </Column>
+    </Row>
+}
+
+else
+{
+    <Row>
+        <Column ColumnSize="ColumnSize.Is12">
+            <AboutMeCard />
+        </Column>
+    </Row>
+    <Row>
+        <Column ColumnSize="ColumnSize.Is12">
+            <ContactCard />
+        </Column>
+    </Row>
+    <Row>
+        <Column ColumnSize="ColumnSize.Is12">
+            <TextInfoCard />
+        </Column>
+    </Row>
+}
