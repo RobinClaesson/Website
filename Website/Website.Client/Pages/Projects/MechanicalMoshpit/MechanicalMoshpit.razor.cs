@@ -5,9 +5,9 @@ using Website.Client.Models;
 using Website.Client.Services;
 using Website.Client.Store.View;
 
-namespace Website.Client.Pages.Projects.Eportfolio
+namespace Website.Client.Pages.Projects.MechanicalMoshpit
 {
-    public partial class EPortfolio
+    public partial class MechanicalMoshpit
     {
         [Inject]
         private IState<ViewState> ViewState { get; set; }
