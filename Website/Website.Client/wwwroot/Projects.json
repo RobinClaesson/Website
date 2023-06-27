@@ -6,16 +6,22 @@
     "Icon": "browser"
   },
   {
-    "Name": "Mechanical Moshpit",
-    "Description": "Network multiplayer game",
-    "PageName": "MechanicalMoshpit",
-    "Icon": "puzzle-piece"
+    "Name": "Thesis",
+    "Description": "Problem Solving Using Automatically Generated Code",
+    "PageName": "ProblemSolvingCode",
+    "Icon": "book"
   },
   {
     "Name": "Simulate Football",
     "Description": "CLI Footbal leage simulator",
     "PageName": "SimulateFootball",
     "Icon": "pie-chart"
+  },
+  {
+    "Name": "Mechanical Moshpit",
+    "Description": "Network multiplayer game centered around programming robots",
+    "PageName": "MechanicalMoshpit",
+    "Icon": "puzzle-piece"
   },
   {
     "Name": "Sorting Visualizer",
