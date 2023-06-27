@@ -1,0 +1,10 @@
+﻿<Carousel Interval="5000">
+
+    @foreach (string imageSource in imageSources)
+    {
+        <CarouselSlide Name="@imageSource">
+            <Image Source="@imageSource" Display="Display.Block" Width="Width.Is100" />
+        </CarouselSlide>
+    }
+
+</Carousel>

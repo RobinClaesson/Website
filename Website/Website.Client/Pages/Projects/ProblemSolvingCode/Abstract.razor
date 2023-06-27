@@ -1,0 +1,34 @@
+﻿<Card Margin="Margin.Is4.OnAll"
+      Background="Background.Primary"
+      Border="Border.Rounded.Is2.Secondary">
+
+
+    <CardBody>
+        <StandardCardTitle Title="Abstract" TitleColor="TextColor.Secondary" />
+        <CardText TextColor="TextColor.Primary">
+            <Paragraph>
+                Usage of natural language processing tools to generate code is increasing together with the advances in artificial intelligence.
+                These tools could improve the efficiency of software development, if the generated code can be shown to be trustworthy enough to solve a given problem.
+                This thesis examines what problems can be solved using automatically generated code such that the results can be trusted.
+            </Paragraph>
+            <Paragraph>
+                A set of six problems were chosen to be used for testing two automatic code generators and the accuracy of their generated code.
+                The problems were chosen to span a range from introductory programming assignments to complex problems with no known efficient algorithm.
+                The problems also varied in how direct their descriptions were, with some describing exactly what should be done,
+                while others described a real-world scenario with a desired result.
+            </Paragraph>
+            <Paragraph>
+                The problems were used as prompts to the automatic code generators to generate code in three different programming languages.
+                A testing framework was built that could execute the generated code, feed problem instances to the processes, and then verify the
+                solutions that were outputted from them. The data from these tests were then used to calculate the accuracy of the generated code,
+                based on how many of the problem instances were correctly solved.
+            </Paragraph>
+            <Paragraph>
+                The experimental results show that most solutions to the problems either
+                got all outputs correct, or had few or no correct outputs. Problems with direct explanations, or simple and well known algorithms, such as sorting,
+                resulted in code with high accuracy. For problems that were wrapped in a scenario, the accuracy was the lowest. Hence, we believe that identifying
+                the underlying problem before resorting to code generators should possibly increase the accuracy of the code.
+            </Paragraph>
+        </CardText>
+    </CardBody>
+</Card>
