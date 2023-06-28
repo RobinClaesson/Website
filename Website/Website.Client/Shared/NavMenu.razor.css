@@ -31,11 +31,11 @@
 }
 
     .nav-item:first-of-type {
-        padding-top: 1rem;
+        padding-top: 0.2rem;
     }
 
     .nav-item:last-of-type {
-        padding-bottom: 1rem;
+        padding-bottom: 0.2rem;
     }
 
     .nav-item ::deep a {
@@ -59,7 +59,16 @@
         }
 
 .project-item {
-    margin-left: 1.5rem;
+    /*margin-left: -0.4rem;*/
+}
+
+.project-item-div {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: 2rem;
+    background-color: rgba(255,255,255,0.05);
+    width: 85%;
+    border-radius: 8px;
 }
 
 @media (min-width: 641px) {
