@@ -8,15 +8,18 @@
         <StandardCardTitle Title="This Website" />
         <CardText TextColor="TextColor.Primary">
             <Paragraph>
-                This website is built with Blazor WebAssembly using
+                The website contains a little information about me, and links to other sites where I exist.
+                It also contains a list of the personal projects I have done or currently is working on.
+            </Paragraph>
+            <Paragraph>
+                It is built with Blazor WebAssembly using
                 <Link TextColor="TextColor.Secondary"
                       To="https://github.com/mrpmorris/Fluxor"
                       Target="Target.Blank">
                 Fluxor</Link>, a zero boilerplate library for Redux development.
-            </Paragraph>
-            <Paragraph>
-                The website contains a little information about me, and links to other sites where I exist.
-                It also contains a list of the personal projects I have done or currently is working on.
+                Everything on the website is controlled by an imutable state, which state percists when changing pages on the site.
+                The state can be altered by effects and reducers reacting to actions. Actions are fired by a lot of things, like clicking a button.
+                This gives good control of the shifting content on the site, and allows for easier debugging as you step through actions and review the state.
             </Paragraph>
         </CardText>
     </CardBody>
