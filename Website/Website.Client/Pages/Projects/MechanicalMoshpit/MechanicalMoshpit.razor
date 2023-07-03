@@ -1,29 +1,26 @@
 ﻿@page "/projects/MechanicalMoshpit/"
 <ProjectMainLayout Title="Mechanical Moshpit" GithubLink="https://github.com/RobotElks/MechanicalMoshpit" />
 
-@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+@switch (ViewState.Value.LayoutSize)
 {
-    <Row>
-        <Column ColumnSize="ColumnSize.Is7">
-            <GameplayCard />
-        </Column>
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is7">
+                <GameplayCard />
+            </Column>
 
-        <Column ColumnSize="ColumnSize.Is5">
+            <Column ColumnSize="ColumnSize.Is5">
+                <SetupCard />
+                <DevelopmentCard />
+            </Column>
+        </Row>
+        break;
+    case LayoutSize.Small:
+        <Column ColumnSize="ColumnSize.Is12">
+            <GameplayCard />
             <SetupCard />
             <DevelopmentCard />
         </Column>
-    </Row>
-}
-else
-{
-    <Column ColumnSize="ColumnSize.Is12">
-        <GameplayCard />
-    </Column>
-    <SetupCard />
-    <Column ColumnSize="ColumnSize.Is12">
-        <SetupCard />
-    </Column>
-    <Column ColumnSize="ColumnSize.Is12">
-        <DevelopmentCard />
-    </Column>
+        break;
 }

@@ -2,30 +2,29 @@
 
 <ProjectMainLayout Title="Simulate Football" GithubLink="https://github.com/RobinClaesson/SimulateFootball" />
 
-@if (ViewState.Value.LayoutSize == LayoutSize.Large)
-{   
-<Row>
-    <Column ColumnSize="ColumnSize.Is5">
-        <DescrpitionCard />
-        <Spacing Height="1rem" />
-        <ExampleRunCard />
-    </Column>
-
-    <Column ColumnSize="ColumnSize.Is6">
-        <Spacing Height="15rem" />
-        <StatisticsCard />
-    </Column>
-</Row>
-}
-else
+@switch (ViewState.Value.LayoutSize)
 {
-    <Column ColumnSize="ColumnSize.Is12">
-        <DescrpitionCard />
-    </Column>
-    <Column ColumnSize="ColumnSize.Is12">
-        <StatisticsCard />
-    </Column>
-    <Column ColumnSize="ColumnSize.Is12">
-        <ExampleRunCard />
-    </Column>
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is5">
+                <DescrpitionCard />
+                <Spacing Height="1rem" />
+                <ExampleRunCard />
+            </Column>
+
+            <Column ColumnSize="ColumnSize.Is6">
+                <Spacing Height="15rem" />
+                <StatisticsCard />
+            </Column>
+        </Row>
+        break;
+    case LayoutSize.Small:
+
+        <Column ColumnSize="ColumnSize.Is12">
+            <DescrpitionCard />
+            <StatisticsCard />
+            <ExampleRunCard />
+        </Column>
+        break;
 }

@@ -3,35 +3,27 @@
 
 <PageTitle>Robin Claesson</PageTitle>
 
-@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+@switch (ViewState.Value.LayoutSize)
 {
-    <Row>
-        <Column ColumnSize="ColumnSize.Is6">
-            <AboutMeCard />
-        </Column>
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is6">
+                <AboutMeCard />
+            </Column>
 
-        <Column ColumnSize="ColumnSize.Is5">
+            <Column ColumnSize="ColumnSize.Is5">
+                <ContactCard />
+                <TextInfoCard />
+            </Column>
+        </Row>
+        break;
+
+    case LayoutSize.Small:
+        <Column ColumnSize="ColumnSize.Is12">
+            <AboutMeCard />
             <ContactCard />
             <TextInfoCard />
         </Column>
-    </Row>
-}
-
-else
-{
-    <Row>
-        <Column ColumnSize="ColumnSize.Is12">
-            <AboutMeCard />
-        </Column>
-    </Row>
-    <Row>
-        <Column ColumnSize="ColumnSize.Is12">
-            <ContactCard />
-        </Column>
-    </Row>
-    <Row>
-        <Column ColumnSize="ColumnSize.Is12">
-            <TextInfoCard />
-        </Column>
-    </Row>
+        break;
 }
