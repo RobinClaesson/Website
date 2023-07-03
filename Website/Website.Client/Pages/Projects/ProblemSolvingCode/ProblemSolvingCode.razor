@@ -3,40 +3,36 @@
 <ProjectMainLayout Title="Problem Solving Using Automatically Generated Code"
                    GithubLink="https://github.com/Emir-Catir-and-Robin-Claesson/Problem-solving-using-automatically-generated-code" />
 
-@if (ViewState.Value.LayoutSize == LayoutSize.Large)
+@switch (ViewState.Value.LayoutSize)
 {
-    <Row>
-        <Column ColumnSize="ColumnSize.Is6">
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is6">
+                <ThesisInfo />
+            </Column>
+
+            <Column ColumnSize="ColumnSize.Is6">
+                <Abstract />
+            </Column>
+        </Row>
+
+        <Row>
+            <Column ColumnSize="ColumnSize.Is3" />
+            <Column ColumnSize="ColumnSize.Is6">
+                <Slides />
+            </Column>
+        </Row>
+        <Row>
+            <Spacing Height="2rem" />
+        </Row>
+        break;
+    case LayoutSize.Small:
+        <Column ColumnSize="ColumnSize.Is12">
             <ThesisInfo />
-        </Column>
-
-        <Column ColumnSize="ColumnSize.Is6">
             <Abstract />
-        </Column>
-    </Row>
-
-    <Row>
-        <Column ColumnSize="ColumnSize.Is3" />
-        <Column ColumnSize="ColumnSize.Is6">
             <Slides />
+            <Spacing Height="2rem" />
         </Column>
-    </Row>
-    <Row>
-        <Spacing Height="2rem" />
-    </Row>
-}
-else
-{
-    <Row>
-        <ThesisInfo />
-    </Row>
-    <Row>
-        <Abstract />
-    </Row>
-    <Row>
-        <Slides />
-    </Row>
-    <Row>
-        <Spacing Height="2rem" />
-    </Row>
+        break;
 }
