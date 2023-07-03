@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+
+COPY Website.Client.csproj .
+RUN dotnet restore Website.Client.csproj
+
+COPY . .
+RUN dotnet build Website.Client.csproj -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish Website.Client.csproj -c Release -o /app/publish
+
+FROM nginx:1-alpine-slim AS final
+WORKDIR /usr/share/nginx/html
+COPY --from=publish /app/publish/wwwroot .
+COPY nginx.conf /etc/nginx/nginx.conf

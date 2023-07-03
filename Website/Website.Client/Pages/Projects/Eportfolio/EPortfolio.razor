@@ -2,29 +2,28 @@
 
 <ProjectMainLayout Title="E-Portfolio"
                    GithubLink="https://github.com/RobinClaesson/Website" />
-@switch (ViewState.Value.LayoutSize)
+@if (ViewState.Value.LayoutSize == LayoutSize.Large)
 {
-    default:
-    case LayoutSize.Large:
-        <Row>
-            <Column ColumnSize="ColumnSize.Is6">
-                <WebsiteDescriptionCard />
-                <Spacing Height="1.rem" />
-                <DynamicInfoCard />
-            </Column>
-
-            <Column ColumnSize="ColumnSize.Is5">
-                <ThemeInfoCard />
-            </Column>
-
-        </Row>
-        break;
-
-    case LayoutSize.Small:
-        <Column ColumnSize="ColumnSize.Is12">
+    <Row>
+        <Column ColumnSize="ColumnSize.Is6">
             <WebsiteDescriptionCard />
+            <Spacing Height="1.rem" />
             <DynamicInfoCard />
+        </Column>
+
+        <Column ColumnSize="ColumnSize.Is5">
             <ThemeInfoCard />
         </Column>
-        break;
+
+    </Row>
+
+    //create a row with the same cards as above , but with the columns switched
+}
+else
+{
+    <Column ColumnSize="ColumnSize.Is12">
+        <WebsiteDescriptionCard />
+        <DynamicInfoCard />
+        <ThemeInfoCard />
+    </Column>
 }
