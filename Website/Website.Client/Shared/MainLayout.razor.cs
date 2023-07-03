@@ -13,6 +13,6 @@ namespace Website.Client.Shared
     {
         [Inject]
         public IState<ViewState> ViewState { get; set; }
-
     }
+
 }
