@@ -11,6 +11,5 @@ namespace Website.Client.Pages.Projects.MechanicalMoshpit
     {
         [Inject]
         private IState<ViewState> ViewState { get; set; }
-
     }
 }
