@@ -1,0 +1,24 @@
+﻿<Card Margin="Margin.Is4.OnAll"
+      Background="Background.Primary"
+      Border="Border.Rounded.Is2.Secondary">
+
+    <CardBody>
+        <StandardCardTitle Title="Command line client" TitleColor="TextColor.Secondary" />
+        <CardText TextColor="TextColor.Primary">
+            <Paragraph>
+                The command line client is a simple program to interact with the server. It can be used to peek, pop and push text to the server.
+                It uses subcommands, or verbs, to interact with the server, such as <Text TextColor="TextColor.Info">./TextShareClient peek Foo</Text>
+                which will call the peek function of the server with the id 'Foo'. The program can also be set to place all fetched texts to the
+                clipboard.
+
+            </Paragraph>
+        </CardText>
+        <CardImage Source="img/projects/textShare/Menu.jpg" Alt="Text Share Client menu" />
+        <CardText TextColor="TextColor.Primary">
+            <Paragraph>
+                If the client is started with the subcommand <Text TextColor="TextColor.Secondary">menu</Text> it is instead launced to a menu, where
+                the user can choose their action, and also browse what id to fetch from.
+            </Paragraph>
+        </CardText>
+    </CardBody>
+</Card>

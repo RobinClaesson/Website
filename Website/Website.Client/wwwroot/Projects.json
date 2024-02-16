@@ -3,30 +3,36 @@
     "Name": "E-Portfolio",
     "Description": "This website and its functions",
     "PageName": "EPortfolio",
-    "Icon": "browser"
+    "Icon": "oi oi-browser"
   },
   {
-    "Name": "Thesis",
-    "Description": "Problem Solving Using Automatically Generated Code",
-    "PageName": "ProblemSolvingCode",
-    "Icon": "book"
+    "Name": "Text Share",
+    "Description": "Text sharing programs",
+    "PageName": "TextShare",
+    "Icon": "fa-solid fa-share-from-square"
   },
   {
     "Name": "Simulate Football",
     "Description": "CLI Footbal leage simulator",
     "PageName": "SimulateFootball",
-    "Icon": "pie-chart"
+    "Icon": "fa-regular fa-futbol"
   },
   {
     "Name": "Mechanical Moshpit",
     "Description": "Network multiplayer game centered around programming robots",
     "PageName": "MechanicalMoshpit",
-    "Icon": "puzzle-piece"
+    "Icon": "fa-solid fa-gamepad"
   },
   {
     "Name": "Sorting Visualizer",
     "Description": "Visualize classic sorting algorithms",
     "PageName": "Sorting",
-    "Icon": "vertical-align-bottom"
+    "Icon": "oi oi-vertical-align-bottom"
+  },
+  {
+    "Name": "Thesis",
+    "Description": "Problem Solving Using Automatically Generated Code",
+    "PageName": "ProblemSolvingCode",
+    "Icon": "fa-regular fa-newspaper"
   }
 ]
