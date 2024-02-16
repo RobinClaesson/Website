@@ -18,10 +18,10 @@
     font-family: Consolas
 }
 
-.oi {
+.fa-solid, .fa-regular, .oi {
     width: 2rem;
     font-size: 1.1rem;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
     top: -1.5px;
 }
 
