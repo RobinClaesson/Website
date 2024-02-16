@@ -13,13 +13,5 @@ namespace Website.Client.Pages
         [Inject]
         private IState<ViewState> ViewState { get; set; }
 
-        [Inject]
-        BrowserService BrowserService { get; set; }
-
-        protected override void OnInitialized()
-        {
-            base.OnInitialized();
-            BrowserService.Resize += (_, _) => StateHasChanged();
-        }
     }
 }

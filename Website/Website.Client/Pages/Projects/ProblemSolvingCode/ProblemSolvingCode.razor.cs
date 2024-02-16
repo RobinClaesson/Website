@@ -15,11 +15,5 @@ namespace Website.Client.Pages.Projects.ProblemSolvingCode
         [Inject]
         BrowserService BrowserService { get; set; }
 
-        protected override void OnInitialized()
-        {
-            base.OnInitialized();
-            BrowserService.Resize += (_, _) => StateHasChanged();
-        }
-
     }
 }
