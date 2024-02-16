@@ -1,0 +1,35 @@
+﻿<Card Margin="Margin.Is4.OnAll"
+      Background="Background.Primary"
+      Border="Border.Rounded.Is2.Secondary">
+
+    <CardBody>
+        <StandardCardTitle Title="Server" />
+        <CardText TextColor="TextColor.Primary">
+            <Paragraph>
+                Host a server for Text Share that uses a REST API to store text to different Ids.  
+                It has GET access points <Text TextColor="TextColor.Info"> Peek </Text> and <Text TextColor="TextColor.Info"> Pop </Text> 
+                to fetch text for an id, the first leaving the text on the server while the second deleting it afterwards. 
+                Other GET access points exists to list the ids and text stored.
+                It also has a POST access point <Text TextColor="TextColor.Info"> Push </Text> to store text to an id, appending if text already exists for the id.
+            </Paragraph>
+
+            <Paragraph>
+                The server has a number of options to customize the server, such as separate ports for HTTP and HTTP, only allowing localhost, 
+                and turning on and off HTTP and HTTPS independently.
+            </Paragraph>
+
+            <Paragraph>
+                
+                Lastly, the server also provides a web interface to show stored texts. 
+                If the program is launched with the --swagger option set, the API can be accessed in the web browser with 
+                <Link TextColor="TextColor.Secondary"
+                      To="https://swagger.io/tools/swagger-ui/"
+                      Target="Target.Blank">
+                Swagger UI
+                </Link>.
+                at /swagger/index.html. The Access API link in the web interface leading to this page is only visible if Swagger is enabled.
+            </Paragraph>
+        </CardText>
+    </CardBody>
+    <CardImage Source="img/projects/textShare/textShareServerWeb.jpg" Alt="Text Share Server web interface" />
+</Card>

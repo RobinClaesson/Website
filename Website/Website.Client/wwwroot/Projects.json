@@ -6,6 +6,12 @@
     "Icon": "oi oi-browser"
   },
   {
+    "Name": "Text Share",
+    "Description": "Text sharing programs",
+    "PageName": "TextShare",
+    "Icon": "fa-solid fa-share-from-square"
+  },
+  {
     "Name": "Simulate Football",
     "Description": "CLI Footbal leage simulator",
     "PageName": "SimulateFootball",

@@ -1,0 +1,36 @@
+﻿@using Fluxor;
+@using Fluxor.Blazor.Web.Components;
+@inherits FluxorComponent;
+@page "/projects/TextShare/"
+
+<ProjectMainLayout Title="Text Share" GithubLink="https://github.com/RobinClaesson/TextShare" />
+
+@switch (ViewState.Value.LayoutSize)
+{
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is5">
+                <DescriptionCard />
+                <Spacing Height="1rem" />
+                <ClientCard />
+            </Column>
+
+            <Column ColumnSize="ColumnSize.Is7">
+                <Spacing Height="6rem" />
+                <ServerCard />
+                <Spacing Height="1rem" />
+                <ShortcutCard />
+            </Column>
+        </Row>
+        break;
+    case LayoutSize.Small:
+
+        <Column ColumnSize="ColumnSize.Is12">
+            <DescriptionCard />
+            <ServerCard />
+            <ClientCard />
+            <ShortcutCard />
+        </Column>
+        break;
+}
