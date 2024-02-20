@@ -1,0 +1,30 @@
+﻿<Card Margin="Margin.Is4.OnAll"
+      Background="Background.Primary"
+      Border="Border.Rounded.Is2.Secondary">
+
+    <CardImage Source="img/projects/rubiksCube/Game.jpg" Alt="Rubiks Cube website" />
+
+    <CardBody>
+        <CardText TextColor="TextColor.Primary">
+            <Paragraph>
+                A fully functioning Rubik's Cube build with 
+                <Link To="https://unity.com/" Target="Target.Blank" TextColor="TextColor.Info">
+                    Unity
+                </Link> 
+                and hosted with Azure on
+                <Link To="https://cube.robinclaesson.com/" Target="Target.Blank" TextColor="TextColor.Secondary">
+                cube.robinclaesson.com
+                </Link>.
+                Rotate the cube with your mouse, and perform moves with either the buttons or your keyboard to solve 
+                the cube after you have pressed the scrambled button. 
+            </Paragraph>
+        </CardText>
+        <Button Color="Color.Light"
+                Type="ButtonType.Link"
+                To="https://cube.robinclaesson.com"
+                Target="Target.Blank"
+                Block>
+            Go to Rubik's Cube website
+        </Button>
+    </CardBody>
+</Card>

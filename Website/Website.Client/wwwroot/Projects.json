@@ -12,6 +12,12 @@
     "Icon": "fa-solid fa-share-from-square"
   },
   {
+    "Name": "Rubik's Cube",
+    "Description": "Online Rubik's Cube",
+    "PageName": "RubiksCube",
+    "Icon": "fa-solid fa-cube"
+  },
+  {
     "Name": "Simulate Football",
     "Description": "CLI Footbal leage simulator",
     "PageName": "SimulateFootball",
