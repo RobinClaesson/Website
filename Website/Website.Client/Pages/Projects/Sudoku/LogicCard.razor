@@ -1,0 +1,38 @@
+﻿<Card Margin="Margin.Is4.OnAll"
+      Background="Background.Primary"
+      Border="Border.Rounded.Is2.Secondary">
+
+    <CardBody>
+        <StandardCardTitle Title="Logical rules" />
+        <CardText TextColor="TextColor.Primary">
+            <ul>
+                <li>
+                    <strong>Calculate candidates:</strong><br />
+                    The basic of all other rules. Fill the candidates list for all empty
+                    cells in the grid. A candidate is a possible number for
+                    the cell that would not break any rules in the current
+                    state of the grid.
+                </li>
+                <li>
+                    <strong>Obvious singles: </strong><br />
+                    Finds empty cells with only one candidate and sets the value.
+                </li>
+                <li>
+                    <strong>Last free cell: </strong><br />
+                    Finds rows, columns and blocks with only one empty cell and sets the value.
+                </li>
+                <li>
+                    <strong>Hidden singles: </strong><br />
+                    Finds empty cells with a unique candidate in the row, column or block 
+                    and sets the value.
+                </li>
+                <li>
+                    <strong>Last possible number: </strong><br />
+                    Finds cells where all other values are already in the row, column or 
+                    block and sets the value.
+                </li>
+            </ul>
+            More info can be found at <Link TextColor="TextColor.Info" To="https://sudoku.com/sudoku-rules/" Target="Target.Blank">Sudoku.com</Link>
+        </CardText>
+    </CardBody>
+</Card>

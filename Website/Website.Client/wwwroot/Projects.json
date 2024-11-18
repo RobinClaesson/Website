@@ -6,6 +6,12 @@
     "Icon": "oi oi-browser"
   },
   {
+    "Name": "Sudoku Solver",
+    "Description": "Sudoku solver with backtracking",
+    "PageName": "Sudoku",
+    "Icon": "oi oi-grid-three-up"
+  },
+  {
     "Name": "Text Share",
     "Description": "Text sharing programs",
     "PageName": "TextShare",
