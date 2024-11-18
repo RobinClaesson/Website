@@ -1,0 +1,39 @@
+﻿@inherits FluxorComponent
+@page "/projects/Sudoku/"
+
+<ProjectMainLayout Title="Sudoku Solver" GithubLink="https://github.com/RobinClaesson/SudokuSolver" />
+
+@switch (ViewState.Value.LayoutSize)
+{
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is5">
+                <DescriptionCard />
+                <Spacing Height="1.5rem" />
+                <LogicCard />
+                <Spacing Height="1.5rem" />
+                <ApiCard />
+            </Column>
+
+            <Column ColumnSize="ColumnSize.Is6">
+                <WebCard />
+                <Spacing Height="1rem" />
+                <FormsCard />
+            </Column>
+        </Row>
+        break;
+    case LayoutSize.Small:
+        <Column ColumnSize="ColumnSize.Is12">
+            <DescriptionCard />
+            <Spacing Height="1rem" />
+            <WebCard />
+            <Spacing Height="0.5rem" />
+            <FormsCard />
+            <Spacing Height="1rem" />
+            <LogicCard />
+            <Spacing Height="0.5rem" />
+            <ApiCard />
+        </Column>
+        break;
+}

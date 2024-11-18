@@ -25,6 +25,6 @@ namespace Website.Client.Store.View
 
     public record OpenWindows
     {
-        public bool ProjectMenu { get; set; }
+        public bool ProjectMenu { get; set; } = true;
     }
 }
