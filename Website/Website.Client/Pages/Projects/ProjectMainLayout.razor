@@ -4,11 +4,20 @@
              TextColor="TextColor.Primary">
         @Title
         <Link To="@GithubLink" Target="Target.Blank" Title="GitHub Repo">
-            <Figure Size="FigureSize.Is48x48">
-             <FigureImage Source="img/icons/github.png" />
-            </Figure>
+        <Figure Size="FigureSize.Is48x48">
+            <FigureImage Source="img/icons/github.png" />
+        </Figure>
         </Link>
+        @if (!string.IsNullOrEmpty(PackageName))
+        {
+            <Blazorise.Link To="@NuGetLink()" Target="Target.Blank" Title="NuGet" Style="margin-left: 1rem;">
+                <Figure Size="FigureSize.Is256x256">
+                    <FigureImage Source="@NuGetImage()" />
+                </Figure>
+            </Blazorise.Link>
+        }
     </Heading>
+        
 </Row>
 
 

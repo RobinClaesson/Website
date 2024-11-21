@@ -1,8 +1,4 @@
-﻿using Website.Client.Models;
-using Fluxor;
-using Microsoft.AspNetCore.Components;
-using Website.Client.Store.View;
-using Website.Client.Services;
+﻿using Microsoft.AspNetCore.Components;
 
 namespace Website.Client.Pages.Projects
 {
@@ -13,5 +9,14 @@ namespace Website.Client.Pages.Projects
 
         [Parameter]
         public string GithubLink { get; set; } = string.Empty;
+
+        [Parameter]
+        public string PackageName { get; set; } = string.Empty;
+
+        private string NuGetLink()
+            => $"https://www.nuget.org/packages/{PackageName}";
+
+        private string NuGetImage()
+            => $"https://img.shields.io/nuget/v/{PackageName}";
     }
 }
