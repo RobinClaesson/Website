@@ -8,7 +8,7 @@
             <Paragraph>
                 A .NET Sudoku solver that uses a combination of logical deduction
                 and brute force to solve any Sudoku puzzle.
-                Try it out at https://sudoku.robinclaesson.com/
+                Try it out at <Link To="https://sudoku.robinclaesson.com/" Target="Target.Blank"> https://sudoku.robinclaesson.com/</Link>
             </Paragraph>
             <Paragraph>
                 It first tries to apply a series of logical rules to fill as many
@@ -17,12 +17,12 @@
                 See the logical rules section for details on the used rules.
             </Paragraph>
             <Paragraph>
-                If the logical rules are not enough to solve the puzzle the solver 
-                goes into a depth first brute force. It fills out the possible values 
-                for each remaining cells, and then picks one value for a cell and restarts 
-                the logical part. If it reaches a dead end it goes back up one step and 
-                tries another value. Since it restarts the logical rules after each "guess" 
-                the depth of the search is likely to be lower than the remaining number of 
+                If the logical rules are not enough to solve the puzzle the solver
+                goes into a depth first brute force. It fills out the possible values
+                for each remaining cells, and then picks one value for a cell and restarts
+                the logical part. If it reaches a dead end it goes back up one step and
+                tries another value. Since it restarts the logical rules after each "guess"
+                the depth of the search is likely to be lower than the remaining number of
                 cells at the first iteration.
             </Paragraph>
         </CardText>

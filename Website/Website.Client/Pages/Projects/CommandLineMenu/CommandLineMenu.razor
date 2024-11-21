@@ -1,0 +1,28 @@
+﻿@inherits FluxorComponent
+@page "/projects/CommandLineMenu/"
+
+<ProjectMainLayout Title="Command Line Menu"
+                   GithubLink="https://github.com/RobinClaesson/CommandLineMenu"
+                   PackageName="ConsoleLineMenu.11.12.24.001" />
+
+@switch (ViewState.Value.LayoutSize)
+{
+    default:
+    case LayoutSize.Large:
+        <Row>
+            <Column ColumnSize="ColumnSize.Is6">
+                <DescriptionCard />
+            </Column>
+            <Column ColumnSize="ColumnSize.Is6">
+                <ImageCard />
+            </Column>
+        </Row>
+        break;
+
+    case LayoutSize.Small:
+        <Column ColumnSize="ColumnSize.Is12">
+            <DescriptionCard />
+            <ImageCard />
+        </Column>
+        break;
+}

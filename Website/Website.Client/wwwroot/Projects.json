@@ -12,6 +12,12 @@
     "Icon": "oi oi-grid-three-up"
   },
   {
+    "Name": "Command Line Menu",
+    "Description": "Command line menu library",
+    "PageName": "CommandLineMenu",
+    "Icon": "oi oi-list"
+  },
+  {
     "Name": "Text Share",
     "Description": "Text sharing programs",
     "PageName": "TextShare",
